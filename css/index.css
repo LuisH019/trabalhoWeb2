@@ -1,3 +1,5 @@
+
+
 form, button{
     display: flex;
     justify-content: center;
@@ -49,11 +51,32 @@ form, button{
     color: darkgoldenrod;
 }
 
-.stock{
+
+.out-of-stock, .stock{
     float: right;
-    background-color: grey;
     padding: 10px;
     border-radius: 30px;
+}
+
+.stock{
+    background-color: grey;
+}
+
+.out-of-stock{
+    background-color: rgb(148, 94, 94);
+}
+
+.paginate-container{
+    margin-top: 12%;
+    font-size: 30px;
+}
+
+.paginate{
+    border-color:rgb(0, 0, 0);
+    border-style: solid;
+    border-radius: 50px;
+    box-shadow: 1px 1px black;
+    padding: 10px 30px;
 }
 
 ::placeholder{

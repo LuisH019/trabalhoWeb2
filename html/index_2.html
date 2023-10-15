@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' >
+    </head>
+    <body>
+        <div class="grid-container">
+            <header>
+                <div class="headline">
+                    <img src="https://dbdzm869oupei.cloudfront.net/img/sticker/preview/407.png" alt="logo">
+                    <h1>Loja de Vinil</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <a href="index.html">
+                            <li>Home</li>
+                        </a>
+                        &nbsp;|&nbsp;
+                        <a href="sobre.html">
+                            <li>Sobre</li>
+                        </a>
+                        &nbsp;|&nbsp;
+                        <a href="contato.html">
+                            <li>Contato</li>
+                        </a>
+                    </ul>
+                </nav>
+                <a class = "login" href="login.html">
+                    <i class='bx bx-user-circle bx-lg'></i>
+                    <span>Login</span>
+                </a>
+            </header>
+
+            <main>
+                <h1>Nossos produtos</h1>
+                <form action = "#" method="POST">
+                   <label for="pesquisa">
+                       Pesquise um produto:
+                   </label>
+                   <input type="search" name="pesquisa" id="pesquisa-id" placeholder="Digite..">
+                   <button type="submit" name = "pesquisa-btn" title="Pesquisar" id="pesquisa-btn-id">
+                       <i class='bx bx-search-alt-2 bx-sm'></i>
+                   </button>
+                </form>
+
+                <div class="produtos-container">
+                    <div class="item">
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/3/3b/Dark_Side_of_the_Moon.png">
+                        <br>
+                        <span class = "title">
+                            Pink Floyd - The Dark Side of the Moon
+                        </span>
+                        <br>
+                        <span class = "price">
+                            R$ 240,00
+                        </span>
+                        <br>
+                        <span class = "out-of-stock">
+                            Não disponível
+                        </span>
+                    </div>
+                </div>
+                <br>
+                <div class="paginate-container">
+                    <a class="paginate" href="index.html"><</a>&nbsp;
+                    <span class="paginate">2</span>&nbsp;
+                    <a class="paginate" href="index_2.html">></a>
+                </div>
+            </main>
+
+            <footer>
+                <h5>
+                    &copy; Loja de Vinil 2023 &nbsp;|&nbsp; Todos os direitos resevados
+                </h5>
+                <div class = "reports">
+                    <h4>
+                        Relatorios:
+                    </h4>
+                    <ul>
+                        <a href="usuarios.html">
+                            <li>Usuarios</li>
+                        </a>
+                        <a href="produtos.html">
+                            <li>Produtos</li>
+                        </a>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
