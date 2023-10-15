@@ -1,0 +1,74 @@
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "aside main main"
+    "footer footer footer";
+}
+
+aside{
+    padding: 0 10%;
+    text-align: center;
+    background-color: rgb(51, 51, 51);
+}
+
+form, .contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%;
+}
+
+.contact-container{
+    justify-content: center;
+    font-size: 200%;
+}
+
+i{
+    margin-right: 20px;
+}
+
+main{
+    padding: 0 10%;
+}
+
+form{
+    flex-direction: column;
+}
+
+label{
+    font-size: large;
+}
+
+textarea, input, button{
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+input{
+    height: 30px;
+}
+
+textarea{
+    padding: 20px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+button{
+    width: max-content;
+}
+
+button[type = submit]{
+    color: white;
+    text-shadow: 1px 2px 2px rgb(0, 0, 0);
+    background-color: darkgreen;
+    margin: 1%;
+}
+
+button[type = submit]:hover{
+    background-color: black;
+}
+

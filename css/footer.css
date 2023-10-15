@@ -1,0 +1,28 @@
+footer{
+    grid-area: footer;
+    background-color: rgb(7, 7, 7);
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas: 
+    "copyright reports";
+    align-items: center
+}
+
+h5, .reports{
+    display: flex;
+    justify-content: flex-end;
+}
+
+h5{
+    grid-area: copyright;
+}
+
+ .reports{
+    grid-area: reports;
+}
+
+.reports ul{
+    list-style:decimal;
+}
+
+

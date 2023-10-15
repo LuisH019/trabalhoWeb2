@@ -1,0 +1,60 @@
+header{
+    grid-area: header;
+    background-color: rgb(156, 156, 156);
+    height: max-content;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "headline nav login";
+}
+
+.headline, nav, .login{
+    display: flex;
+    align-items: center;
+}
+
+.headline{
+    grid-area: headline;
+}
+
+.headline img{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out; 
+    margin: 0;
+}
+
+a:hover{
+    color: gray;
+}
+
+nav{
+    font-size: 25px;
+    grid-area: nav;
+    justify-content: center;
+}
+
+nav ul{
+    padding: 0;
+}
+nav ul li{
+    display: inline-block;
+}
+
+.login{
+    grid-area: login;
+    justify-content: flex-end;
+    font-size: 30px;
+}
+
+.login i{
+    margin-right: 10px;
+}
