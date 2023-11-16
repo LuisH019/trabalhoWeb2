@@ -1,3 +1,20 @@
+<!-- Alterações feitas:
+    - Criação do botão de alterar tema;
+
+    - Criação do arquivo 'alter-theme.js' para alterar o tema da página (light ou dark);
+        -> Quando o botão de alterar tema é clicado, uma função no javascript é chamada,
+            alterando o css dos elementos, como a header, a main, a footer, etc.;
+
+        -> A variável 'flag' no javascript serve como controle para saber
+            se apágina está no tema claro ou no escuro,
+            sempre invertendo o valor a cada clique.
+            Se ela for verdadeira, alteram-se as cores da página,
+            mas se for falsa, ela desfaz as alterações feitas no próximo clique no botão;
+    
+    - Criação de algumas classes 'light' nos arquivos css para quando a alteração pelo javascript não
+        surtia o resultado desejado, sendo necessário alterar a classe desse elemento pelo js; -->
+            
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -9,8 +26,9 @@
         <link rel="stylesheet" href="../css/index.css">
         <link rel="stylesheet" href="../css/footer.css">
         <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' >
+        <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
     </head>
-    <body>
+    <body id="body">
         <div class="grid-container">
             <header>
                 <div class="headline">
@@ -32,13 +50,19 @@
                         </a>
                     </ul>
                 </nav>
+                <div class = "alter-theme-container">
+                    <span>Alterar tema: </span>
+                    <button id="alter-theme">
+                        <i class="fa-regular fa-sun fa-xl"></i>
+                    </button>
+                </div>
                 <a class = "login" href="login.html">
                     <i class='bx bx-user-circle bx-lg'></i>
                     <span>Login</span>
                 </a>
             </header>
 
-            <main>
+            <main id = 'main'>
                 <h1>Nossos produtos</h1>
                 <form action = "#" method="POST">
                    <label for="pesquisa">
@@ -192,7 +216,7 @@
                 <br>
                 <div class="paginate-container">
                     <span class="paginate">1</span>&nbsp;
-                    <a class="paginate" href="index_2.html">></a>
+                    <a id = "other-page" class="paginate" href="index_2.html">></a>
                 </div>
             </main>
 
@@ -216,4 +240,6 @@
             </footer>
         </div>
     </body>
+    <script src="../js/alter-theme.js"></script>
+    <script src="https://kit.fontawesome.com/74db95d371.js" crossorigin="anonymous"></script>
 </html>
